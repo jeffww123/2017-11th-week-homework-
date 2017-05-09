@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Chat Together</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+  <link href="../css/material-scrolltop.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/material-scrolltop.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="brand-logo"><a href="../index.html"><img src="../img/chat-logo.jpg"></a></div>
+      <ul class="right hide-on-med-and-down black-text">
+        <li><a href="./index.html">Information</a></li>
+        <li><a href="../Chat/index.html">Chat</a></li>
+        <li><a href="../index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="./index.html">Information</a></li>
+        <li><a href="../Chat/index.html">Chat</a></li>
+        <li><a href="../index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<div class="row"></div>
+<div class="container">
+  <div class="section">
+    <div class="row">
+        <div class="col s12 m12">
+          <div class="icon-block">
+            <h5 class="left">User Information</h5>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col s12 m12 center">
+          <div class="user-img"><img src="../img/chat-logo.jpg"></div>
+        </div>
+      </div>
+      <div class="row"></div>
+    <div class="user-inf">
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <h3 class="center brown-text">User Name</h3>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <span class="center black-text" id="profile-name"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <h3 class="center brown-text">E-mail</h3>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <span class="center black-text" id ="profile-email"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <h3 class="center brown-text">Occupation</h3>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <span class="center black-text" id="profile-occupation"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <h3 class="center brown-text">Age</h3>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <span class="center black-text" id="profile-age"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <h3 class="center brown-text">Description</h3>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="icon-block">
+            <span class="center black-text" id="profile-description"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row"></div>
+    <div class="row sign_btn center">
+      <div class="col s12 m12">
+      <a href ="../Update Information/index.html"><button class="btn waves waves" id ="update">Update<i class="material-icons right">update</i></button></a>
+      </div>
+    </div>
+
+  <!--<footer class="page-footer teal">
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="center write-text text-lighten-3">Copyright© 2017 11th week All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>-->
+
+  <button class="material-scrolltop" type="button"></button>
+
+  </body>
+</html>

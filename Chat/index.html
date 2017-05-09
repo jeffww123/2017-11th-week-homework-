@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Chat Together</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+  <link href="../css/material-scrolltop.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/material-scrolltop.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="brand-logo"><a href="../index.html"><img src="../img/chat-logo.jpg"></a></div>
+      <ul class="right hide-on-med-and-down black-text">
+        <li><a href="../User Information/index.html">Information</a></li>
+        <li><a href="./index.html">Chat</a></li>
+        <li><a href="../index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="../User Information/index.html">Information</a></li>
+        <li><a href="./index.html">Chat</a></li>
+        <li><a href="../index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<div class="row"></div>
+<div class="container">
+  <div class="row" style="margin: 0px;">
+    <div class="col s12">
+      <ul id="message-list" class="collection" style="overflow-y: scroll; height: 75vh; margin-bottom: 0px;">
+    </div>
+  </div>
+  <div class="row"></div>
+  <div class="row"></div>
+    <div class="row send_btn center">
+      <form action="#">
+        <div class="col s1 m1"></div>
+        <div class="col s9 m9">
+          <input id="message" type="text" placeholder="Enter the message, and press Send" class="validate">
+        </div>
+        <div class="col s1 m1">
+          <button class="btn waves waves">Send<i class="material-icons right">send</i></button>
+        </div>
+        <div class="col s1 m1"></div>
+      </form>
+    </div>
+  </div>
+  <!--<footer class="page-footer teal">
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="center write-text text-lighten-3">Copyright© 2017 11th week All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>-->
+
+  <button class="material-scrolltop" type="button"></button>
+
+  </body>
+</html>

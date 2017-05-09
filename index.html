@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Chat Together</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/material-scrolltop.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/material-scrolltop.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="brand-logo"><a href="./index.html"><img src="img/chat-logo.jpg"></a></div>
+      <ul class="right hide-on-med-and-down black-text">
+        <li><a href="./User Information/index.html">Information</a></li>
+        <li><a href="./Chat/index.html" id="chat">Chat</a></li>
+        <li><a href="./index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="./User Information/index.html">Information</a></li>
+        <li><a href="./Chat/index.html">Chat</a></li>
+        <li><a href="./index.html" id="btnSignOut" data-upgraded=",MaterialButton,MaterialRipple">Log out</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="section">
+    <div class="row">
+        <div class="col s12 m12">
+          <div class="icon-block">
+            <h5 class="left">Sign in</h5>
+          </div>
+        </div>
+      </div>
+      <br/>
+    <div class="row">
+      <div class="col s2 m2">
+        <div class="icon-block">
+          <h2 class="left brown-text"><i class="material-icons">email</i></h2>
+        </div>
+      </div>
+      <div class="col s10 m10">
+        <h5 class="left icon-word"> E-Mail</h5>
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
+              <input placeholder="test123@gmail.com" id="email" type="email" class="validate valid">
+            </div>
+          </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2 m2">
+        <div class="icon-block">
+          <h2 class="left brown-text"><i class="material-icons">input</i></h2>
+        </div>
+      </div>
+      <div class="col s10 m10">
+        <h5 class="left icon-word"> Password</h5>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
+            <input id="password" type="password" class="validate valid">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row sign_btn">
+      <div class="col s3 m3">
+      </div>
+      <div class="col s2 m3">
+        <button class="btn waves-effect waves" id="btnSignIn" data-upgraded = ",MaterialButton,MaterialRipple">SIGN IN<i class="material-icons right">send</i></button>
+      </div>
+      <div class="col s2 m0">
+      </div>
+      <div class="col s2 m3">
+        <a href="./Signup/index.html"><button class="btn waves-effect waves">SIGN UP<i class="material-icons right">person</i></button></a>
+      </div>
+      <div class="col s3 m3">
+      </div>
+  </div>
+
+  <!--<footer class="page-footer teal">
+
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="center write-text text-lighten-3">Copyright© 2017 11th week All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>-->
+
+  <button class="material-scrolltop" type="button"></button>
+
+  </body>
+</html>
